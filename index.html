@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booklet</title>
@@ -38,14 +41,14 @@
             width: 100%;
             padding: 20px;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-            background: white;
+            background: rgb(250, 243, 240);
             border: 1px solid #ccc;
             position: absolute;
             transition: transform 0.5s, z-index 0.5s;
             box-sizing: border-box;
         }
         .cover {
-            background: lightblue;
+            background: rgb(212, 226, 212);
             z-index: 9;
             transform-origin: top;
             display: flex;
@@ -130,7 +133,7 @@
         }
 
         .page {
-            background: white;
+            background: rgb(255, 202, 204);
             border-left: none;
             display: flex;
             flex-direction: column;
@@ -177,25 +180,50 @@
         .btn-no {
             background-color: #e74c3c;
         }
+        .darumadrop-one-regular {
+        font-family: "Darumadrop One", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        p, h1{
+            color: rgb(94, 73, 113);
+            font-family: 'Darumadrop One', serif;
+        }
     </style>
 </head>
 <body>
     <div class="booklet closed">
         <div class="cover" onclick="toggleBooklet()">
-            <img id="cover-img" src="https://placehold.co/600x400" />
+            <img id="cover-img" src=https://github.com/kotoromo/kotoromo.github.io/blob/main/yuta.jpg?raw=true" />
             <section id="cover-text">
-                <p>De: <span class="cover-text_lg">Nicky BB</span></p>
-                <p>Para: <span class="cover-text_lg">Tu chiquibeibi</span></p>
+                <p>De: <span class="cover-text_lg">Nicky</span></p>
+                <p>Para: <span class="cover-text_lg">Fernanda</span></p>
             </section>
         </div>
         <div class="first-page page">
-            <h1>Hello World!</h1>
-            <p>Lorem ipsum</p>
-            <img class="page-img" src="https://placehold.co/600x400" />
+            <h1>Fernanda,</h1>
+            <p> 
+                La verdad es que lo poco que conozco de tu persona me ha 
+                gustado, y siento una fuerte atracción por ti. Experimento un 
+                fuerte deseo por continuar conociéndote con estos sentimientos 
+                en mi corazón, explorandolos a tu lado. 
+            </p>
+            <p>
+                Más que quedarme pasivamente observandolos, quiero actuar sobre 
+                lo que palpa mi corazón y como consecuencia de este deseo, junto 
+                con la necesidad que tengo de expresarte mi sentir, he hecho 
+                esta carta  manteniéndote en mis pensamientos mientras la 
+                elaboraba.
+            </p>
+            <p>
+                Lamento la cursilería, pero espero que esto no sea obstaculo para 
+                que te guste este detalle que he preparado para ti.
+            </p>
+            <img class="page-img" src="https://github.com/kotoromo/kotoromo.github.io/blob/main/chibi_nobg.png?raw=true" />
         </div>
         <div class="second-page page">
-            <h1>Lorem Ipsum?</h1>
-            <img class="page-img" src="https://placehold.co/600x400" />
+            <h1>¿Te gustaría ser mi valentín?</h1>
+            <img class="page-img" src="https://github.com/kotoromo/kotoromo.github.io/blob/main/heart-locket.gif?raw=true" />
             <section class="second-page_buttons">
                 <button class="btn btn-si">
                     Si
@@ -208,7 +236,7 @@
         <div class="back-cover">Back Cover</div>
 
         <!-- Heart node, will be cloned to make many hearts! -->
-        <img class="heart-node" src="https://placehold.co/100x100"/>
+        <img class="heart-node" src="https://github.com/kotoromo/kotoromo.github.io/blob/main/cora.png?raw=true"/>
     </div>
     
     <script>
